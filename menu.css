@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f7f6;
+    color: #783218;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #783218;
+    line-height: 1.2;
+}
+
+.logo::before,
+.logo::after {
+    content: "~";
+    display: block;
+    font-size: 2rem;
+    color: #783218;
+    transform: scaleX(2);
+    margin: 1rem 0;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: #783218;
+}
+
+.menu-item {
+    margin-bottom: 1.5rem;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.item-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #783218;
+}
+
+.item-price {
+    font-family: 'Lato', sans-serif;
+    color: #783218;
+}
+
+.item-description {
+    font-size: 0.9rem;
+    color: #8b5e3c;
+    line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+}
